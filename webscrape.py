@@ -18,7 +18,7 @@ for x in n:
     pageList.append(x)
 
 def extract(page):
-    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36 OPR/81.0.4196.61'}
+    headers = {'User-Agent': 'YOUR USER AGENT HERE'}
     url = f'https://www.indeed.com/jobs?q&l=28012&radius=15&start={page}&vjk=f1d808a4828d01d8'
     r = requests.get(url, headers)
     soup = BeautifulSoup(r.content, 'html.parser')
